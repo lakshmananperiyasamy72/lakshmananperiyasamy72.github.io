@@ -1,0 +1,9 @@
+# Robots.txt for Lakshmanan Periyasamy Portfolio
+User-agent: *
+Allow: /
+
+# Disallow build cache or private assets if any
+Disallow: /assets/resume/*.gitkeep
+
+# Sitemap location
+Sitemap: https://lakshmananperiyasamy72.github.io/sitemap.xml
