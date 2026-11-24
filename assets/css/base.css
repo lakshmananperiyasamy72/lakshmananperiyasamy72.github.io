@@ -111,6 +111,14 @@ code {
   color: var(--color-accent-dark);
 }
 
+pre code {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: inherit;
+  font-size: inherit;
+}
+
 .text-accent {
   color: var(--color-accent);
 }

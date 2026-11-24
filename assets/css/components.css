@@ -1188,9 +1188,9 @@
   font-size: var(--text-xs);
   font-weight: 500;
   border-radius: var(--radius-md);
-  background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  color: var(--color-text-secondary);
+  background-color: #0E1116;
+  border: 1px solid #1E232C;
+  color: #FFFFFF;
   transition: all var(--transition-fast);
   cursor: default;
 }
@@ -1199,20 +1199,21 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: var(--color-accent);
-  opacity: 0.7;
+  background-color: #006FCF;
+  opacity: 0.9;
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
 .skill-chip:hover {
-  border-color: rgba(0, 111, 207, 0.35);
-  background-color: var(--color-light-grey);
-  color: var(--color-text-primary);
+  border-color: #006FCF;
+  background-color: #004B87;
+  color: #FFFFFF;
   transform: translateY(-1px);
 }
 
 .skill-chip:hover .skill-chip-dot {
   opacity: 1;
+  background-color: #38BDF8;
   transform: scale(1.4);
 }
 

@@ -518,13 +518,25 @@
   overflow-x: auto;
 }
 
+.terminal-code-block pre,
+.terminal-code-block code {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-mono) !important;
+  display: block;
+}
+
 /* Syntax Highlighting Tokens */
-.syn-key { color: #38BDF8; }        /* Cyan/Sky Blue keys */
-.syn-str { color: #93C5FD; }        /* Soft Light Blue strings */
-.syn-arr { color: #FCD34D; }        /* Yellow array brackets */
-.syn-num { color: #C084FC; }        /* Purple numbers */
-.syn-bool { color: #34D399; }       /* Green booleans */
-.syn-punct { color: #94A3B8; }
+.syn-key { color: #38BDF8 !important; background: transparent !important; }        /* Cyan/Sky Blue keys */
+.syn-str { color: #FFFFFF !important; background: transparent !important; }        /* Crisp White strings */
+.syn-arr { color: #FCD34D !important; background: transparent !important; }        /* Yellow array brackets */
+.syn-num { color: #C084FC !important; background: transparent !important; }        /* Purple numbers */
+.syn-bool { color: #34D399 !important; background: transparent !important; }       /* Green booleans */
+.syn-punct { color: #CBD2DE !important; background: transparent !important; }      /* Light grey punctuation */
 
 /* Quick Telemetry Footnote */
 .terminal-footer-metrics {
