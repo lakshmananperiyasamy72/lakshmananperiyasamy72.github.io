@@ -76,7 +76,23 @@
   <script src="https://unpkg.com/lucide@latest" defer></script>
 
   <!-- Modular CSS Architecture -->
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css?v=20261124_1048">
+  <style>
+    /* Direct override to guarantee soft skill chips without browser cache delay */
+    .skill-chip {
+      background-color: #F0F4F9 !important;
+      border: 1px solid #D0D9E5 !important;
+      color: #252B33 !important;
+    }
+    .skill-chip-dot {
+      background-color: #006FCF !important;
+    }
+    .skill-chip:hover {
+      background-color: #E3EFFB !important;
+      border-color: #006FCF !important;
+      color: #004B87 !important;
+    }
+  </style>
 </head>
 <body>
   <!-- Custom Usability-Preserving Ambient Cursor -->

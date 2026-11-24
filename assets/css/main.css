@@ -3,9 +3,9 @@
    Lakshmanan Periyasamy - Personal Portfolio
    ========================================================================== */
 
-@import url('./variables.css');
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./layout.css');
-@import url('./components.css');
+@import url('./variables.css?v=20261124_1048');
+@import url('./reset.css?v=20261124_1048');
+@import url('./base.css?v=20261124_1048');
+@import url('./layout.css?v=20261124_1048');
+@import url('./components.css?v=20261124_1048');
 
