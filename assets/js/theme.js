@@ -13,8 +13,8 @@
     if (savedTheme === 'light' || savedTheme === 'dark') {
       return savedTheme;
     }
-    // Default to dark mode for developer portfolio or check OS preference
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    // Default to American Express Blue & White light theme
+    return 'light';
   }
 
   function applyTheme(theme) {

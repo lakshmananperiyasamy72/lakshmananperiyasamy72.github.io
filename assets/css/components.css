@@ -152,7 +152,7 @@
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(450px circle at var(--mouse-x) var(--mouse-y), rgba(182, 243, 107, 0.09), transparent 80%);
+  background: radial-gradient(450px circle at var(--mouse-x) var(--mouse-y), rgba(0, 111, 207, 0.06), transparent 80%);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-fast);
@@ -205,7 +205,7 @@
   letter-spacing: 0.08em;
   color: var(--color-accent);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius-full);
 }
@@ -231,7 +231,7 @@
   flex-direction: column;
   gap: var(--space-3);
   margin-bottom: var(--space-5);
-  background-color: #0E1116;
+  background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-4);
@@ -251,7 +251,7 @@
   letter-spacing: 0.06em;
 }
 
-.statement-label.problem { color: #F87171; }
+.statement-label.problem { color: #D9381E; }
 .statement-label.solution { color: var(--color-accent); }
 
 .statement-text {
@@ -302,8 +302,8 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-2);
-  background-color: rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  background-color: rgba(0, 111, 207, 0.06);
+  border: 1px solid rgba(0, 111, 207, 0.2);
   border-radius: var(--radius-md);
   padding: var(--space-3);
   margin-bottom: var(--space-5);
@@ -312,14 +312,14 @@
 .project-notice i {
   width: 14px;
   height: 14px;
-  color: #F59E0B;
+  color: var(--color-accent);
   flex-shrink: 0;
   margin-top: 2px;
 }
 
 .project-notice-text {
   font-size: var(--text-2xs);
-  color: #FCD34D;
+  color: var(--color-text-secondary);
   line-height: 1.4;
   margin-bottom: 0;
 }
@@ -403,7 +403,7 @@
   height: 52px;
   border-radius: var(--radius-lg);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.3);
+  border: 1px solid rgba(0, 111, 207, 0.25);
   color: var(--color-accent);
   display: flex;
   align-items: center;
@@ -424,11 +424,11 @@
   font-family: var(--font-heading);
   font-size: var(--text-xs);
   font-weight: 700;
-  color: #0B0D10;
+  color: #FFFFFF;
   background-color: var(--color-accent);
   padding: 0.3rem 0.8rem;
   border-radius: var(--radius-full);
-  box-shadow: 0 0 12px var(--color-accent-glow);
+  box-shadow: 0 2px 10px rgba(0, 111, 207, 0.3);
 }
 
 .achievement-title {
@@ -522,8 +522,8 @@
 .cert-issuer-badge {
   font-family: var(--font-mono);
   font-size: var(--text-2xs);
-  color: var(--color-text-muted);
-  background-color: #0E1116;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   padding: 0.2rem 0.55rem;
   border-radius: var(--radius-sm);
@@ -541,13 +541,13 @@
 .cert-status-completed {
   color: var(--color-accent);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
 }
 
 .cert-status-training {
-  color: #60A5FA;
-  background-color: rgba(96, 165, 250, 0.12);
-  border: 1px solid rgba(96, 165, 250, 0.25);
+  color: var(--color-accent);
+  background-color: var(--color-accent-dim);
+  border: 1px solid rgba(0, 111, 207, 0.25);
 }
 
 .cert-icon-title-wrap {
@@ -673,7 +673,7 @@
   height: 42px;
   border-radius: var(--radius-md);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
   color: var(--color-accent);
   display: flex;
   align-items: center;
@@ -746,13 +746,13 @@
 
 .copy-email-btn.copied {
   background-color: var(--color-accent);
-  color: #0B0D10;
+  color: #FFFFFF;
   border-color: var(--color-accent);
 }
 
 /* Direct Outreach Overview Card */
 .contact-callout-card {
-  background-color: #0E1116;
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
@@ -774,7 +774,7 @@
   font-weight: 600;
   color: var(--color-accent);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-full);
   margin-bottom: var(--space-4);
@@ -912,7 +912,7 @@
   height: 48px;
   border-radius: var(--radius-lg);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
   color: var(--color-accent);
   display: flex;
   align-items: center;
@@ -969,7 +969,7 @@
   font-weight: 600;
   color: var(--color-accent);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.3);
+  border: 1px solid rgba(0, 111, 207, 0.3);
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-full);
 }
@@ -1136,7 +1136,7 @@
   height: 40px;
   border-radius: var(--radius-md);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.2);
+  border: 1px solid rgba(0, 111, 207, 0.2);
   color: var(--color-accent);
   display: flex;
   align-items: center;
@@ -1188,7 +1188,7 @@
   font-size: var(--text-xs);
   font-weight: 500;
   border-radius: var(--radius-md);
-  background-color: #0E1116;
+  background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   color: var(--color-text-secondary);
   transition: all var(--transition-fast);
@@ -1205,8 +1205,8 @@
 }
 
 .skill-chip:hover {
-  border-color: rgba(182, 243, 107, 0.35);
-  background-color: #151921;
+  border-color: rgba(0, 111, 207, 0.35);
+  background-color: var(--color-light-grey);
   color: var(--color-text-primary);
   transform: translateY(-1px);
 }
@@ -1237,7 +1237,7 @@
   background: linear-gradient(
     to bottom,
     var(--color-accent) 0%,
-    rgba(182, 243, 107, 0.25) 80%,
+    rgba(0, 111, 207, 0.25) 80%,
     transparent 100%
   );
 }
@@ -1339,8 +1339,8 @@
   gap: var(--space-1);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  background-color: #0E1116;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-full);
@@ -1356,7 +1356,7 @@
   letter-spacing: 0.05em;
   color: var(--color-accent);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
   padding: 0.2rem 0.55rem;
   border-radius: var(--radius-sm);
 }
@@ -1427,7 +1427,7 @@
 .badge-accent {
   background-color: var(--color-accent-dim);
   color: var(--color-accent);
-  border-color: rgba(182, 243, 107, 0.25);
+  border-color: rgba(0, 111, 207, 0.25);
 }
 
 .status-pill {
@@ -1439,9 +1439,9 @@
   font-size: var(--text-xs);
   font-weight: 600;
   border-radius: var(--radius-full);
-  background-color: rgba(182, 243, 107, 0.08);
+  background-color: rgba(0, 111, 207, 0.08);
   color: var(--color-accent);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
 }
 
 .status-dot {

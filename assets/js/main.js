@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Developer Console Stamp
   console.log(
     '%c Lakshmanan Periyasamy %c Software Developer & DevOps Engineer ',
-    'background:#B6F36B; color:#0B0D10; font-weight:bold; padding:4px 8px; border-radius:4px 0 0 4px;',
-    'background:#12151A; color:#B6F36B; border:1px solid #1E232C; font-weight:bold; padding:3px 8px; border-radius:0 4px 4px 0;'
+    'background:#006FCF; color:#FFFFFF; font-weight:bold; padding:4px 8px; border-radius:4px 0 0 4px;',
+    'background:#004B87; color:#FFFFFF; border:1px solid #0055A5; font-weight:bold; padding:3px 8px; border-radius:0 4px 4px 0;'
   );
 
   // 3. Scroll Reveal Animation using IntersectionObserver

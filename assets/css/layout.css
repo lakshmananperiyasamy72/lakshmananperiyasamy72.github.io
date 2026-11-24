@@ -3,7 +3,7 @@
    Lakshmanan Periyasamy - Personal Portfolio
    ========================================================================== */
 
-/* Sticky Header with Ultra-Refined Dark Glassmorphism */
+/* Sticky Header with Ultra-Refined Glassmorphism */
 .site-header {
   position: sticky;
   top: 0;
@@ -11,10 +11,10 @@
   width: 100%;
   height: var(--nav-height);
   z-index: var(--z-header);
-  background-color: rgba(11, 13, 16, 0.85);
+  background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border);
   transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
@@ -148,7 +148,7 @@
   width: 85%;
   max-width: 380px;
   height: 100vh;
-  background-color: #12151A;
+  background-color: var(--color-surface);
   border-left: 1px solid var(--color-border);
   box-shadow: var(--shadow-card-hover);
   z-index: var(--z-drawer);
@@ -167,7 +167,7 @@
 .drawer-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(11, 13, 16, 0.85);
+  background-color: rgba(37, 43, 51, 0.45);
   backdrop-filter: blur(8px);
   z-index: calc(var(--z-drawer) - 1);
   opacity: 0;
@@ -242,8 +242,8 @@
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 111, 207, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 111, 207, 0.04) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 75% 65% at 50% 25%, #000 30%, transparent 85%);
   -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 25%, #000 30%, transparent 85%);
@@ -258,7 +258,7 @@
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(182, 243, 107, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 111, 207, 0.07) 0%, transparent 70%);
   filter: blur(80px);
   pointer-events: none;
   z-index: var(--z-negative);
@@ -309,7 +309,7 @@
   font-weight: 500;
   color: var(--color-accent);
   background-color: var(--color-accent-dim);
-  border: 1px solid rgba(182, 243, 107, 0.25);
+  border: 1px solid rgba(0, 111, 207, 0.25);
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius-full);
 }
@@ -429,7 +429,7 @@
 }
 
 .dev-visual-card:hover {
-  border-color: rgba(182, 243, 107, 0.4);
+  border-color: rgba(0, 111, 207, 0.4);
   transform: translateY(-3px);
 }
 
@@ -439,8 +439,8 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--space-4) var(--space-5);
-  background-color: #0E1116;
-  border-bottom: 1px solid var(--color-border);
+  background-color: #004B87;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .terminal-dots {
@@ -462,7 +462,7 @@
 .terminal-title {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  color: var(--color-text-muted);
+  color: #E9EDF2;
   display: flex;
   align-items: center;
   gap: var(--space-2);
@@ -474,7 +474,7 @@
   gap: var(--space-2);
   font-family: var(--font-mono);
   font-size: var(--text-2xs);
-  color: var(--color-accent);
+  color: #FFFFFF;
 }
 
 .terminal-status-indicator::before {
@@ -482,8 +482,8 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--color-accent);
-  box-shadow: 0 0 6px var(--color-accent);
+  background-color: #38BDF8;
+  box-shadow: 0 0 6px #38BDF8;
 }
 
 /* Terminal Body */
@@ -492,26 +492,26 @@
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   line-height: 1.7;
-  color: var(--color-text-secondary);
-  background-color: #12151A;
+  color: #E9EDF2;
+  background-color: #003666;
 }
 
 .terminal-command {
   display: flex;
   align-items: center;
   gap: var(--space-2);
-  color: var(--color-text-primary);
+  color: #FFFFFF;
   margin-bottom: var(--space-4);
   font-weight: 600;
 }
 
 .terminal-prompt {
-  color: var(--color-accent);
+  color: #38BDF8;
 }
 
 .terminal-code-block {
-  background-color: #0B0D10;
-  border: 1px solid var(--color-border);
+  background-color: #002D54;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-md);
   padding: var(--space-4);
   margin-bottom: var(--space-4);
@@ -519,12 +519,12 @@
 }
 
 /* Syntax Highlighting Tokens */
-.syn-key { color: #60A5FA; }        /* Blue keys */
-.syn-str { color: var(--color-accent); } /* Electric Lime strings */
-.syn-arr { color: #F59E0B; }        /* Yellow array brackets */
+.syn-key { color: #38BDF8; }        /* Cyan/Sky Blue keys */
+.syn-str { color: #93C5FD; }        /* Soft Light Blue strings */
+.syn-arr { color: #FCD34D; }        /* Yellow array brackets */
 .syn-num { color: #C084FC; }        /* Purple numbers */
 .syn-bool { color: #34D399; }       /* Green booleans */
-.syn-punct { color: var(--color-text-muted); }
+.syn-punct { color: #94A3B8; }
 
 /* Quick Telemetry Footnote */
 .terminal-footer-metrics {
@@ -532,7 +532,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-3);
   padding-top: var(--space-3);
-  border-top: 1px solid var(--color-border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .telemetry-item {
@@ -542,14 +542,14 @@
 
 .telemetry-label {
   font-size: var(--text-2xs);
-  color: var(--color-text-muted);
+  color: #94A3B8;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .telemetry-val {
   font-size: var(--text-xs);
-  color: var(--color-text-primary);
+  color: #FFFFFF;
   font-weight: 600;
 }
 
@@ -595,7 +595,7 @@
   width: 46px;
   height: 46px;
   border-radius: var(--radius-full);
-  background-color: #12151A;
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   color: var(--color-text-secondary);
   display: flex;
@@ -618,7 +618,7 @@
 
 .floating-top-btn:hover {
   background-color: var(--color-accent);
-  color: #0B0D10;
+  color: #FFFFFF;
   border-color: var(--color-accent);
   transform: translateY(-3px) scale(1.06);
   box-shadow: 0 0 20px var(--color-accent-glow);

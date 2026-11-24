@@ -1,44 +1,46 @@
 /* ==========================================================================
-   DESIGN SYSTEM TOKENS - PREMIUM DARK DEVELOPER PORTFOLIO
-   Lakshmanan Periyasamy
+   DESIGN SYSTEM TOKENS - AMERICAN EXPRESS INSPIRED THEME
+   Lakshmanan Periyasamy - Personal Portfolio
    ========================================================================== */
 
-:root {
+:root,
+[data-theme="light"] {
   /* -------------------------------------------------------------------------
-     Color Palette (Dark First - Technical & High Contrast)
+     American Express Inspired Colour Palette (Default)
      ------------------------------------------------------------------------- */
-  --color-bg: #0B0D10;                 /* Deep Matte Dark Background */
-  --color-surface: #12151A;            /* Secondary Container / Card Surface */
-  --color-surface-elevated: #181C23;   /* Elevated Card / Hover Surface */
-  --color-surface-hover: #1E232C;      /* Interactive Hover State */
+  --color-bg: #FFFFFF;                 /* Main Background: #FFFFFF */
+  --color-bg-secondary: #F5F7FA;       /* Secondary Background: #F5F7FA */
+  --color-surface: #FFFFFF;            /* Card Background: #FFFFFF */
+  --color-surface-elevated: #FFFFFF;   /* Elevated Card Surface */
+  --color-surface-hover: #F5F7FA;      /* Interactive Hover State */
+  --color-light-grey: #E9EDF2;         /* Light Grey: #E9EDF2 */
   
   /* Borders */
-  --color-border: #1E232C;             /* Subtle Dark Grey Border */
-  --color-border-subtle: rgba(255, 255, 255, 0.06);
-  --color-border-hover: rgba(182, 243, 107, 0.35); /* Electric Lime Glow Border */
+  --color-border: #D9DEE5;             /* Border: #D9DEE5 */
+  --color-border-subtle: #E9EDF2;      /* Subtle Light Grey Border */
+  --color-border-hover: #006FCF;       /* Primary Blue Hover Border */
 
   /* Text & Typography Colors */
-  --color-text-primary: #F5F7FA;       /* Crisp High Contrast White */
-  --color-text-secondary: #CBD2DE;     /* Clean Secondary Body Text */
-  --color-text-muted: #A1A7B3;         /* Muted Slate Text */
-  --color-text-inverse: #0B0D10;       /* Dark Text on Light/Accent Surfaces */
+  --color-text-primary: #252B33;       /* Primary Text: #252B33 */
+  --color-text-secondary: #626B76;     /* Secondary Text: #626B76 */
+  --color-text-muted: #7A8490;         /* Muted Text: #7A8490 */
+  --color-text-inverse: #FFFFFF;       /* Crisp White Text on Blue Buttons */
 
-  /* Primary Accent: Electric Lime */
-  --color-accent: #B6F36B;             /* Primary Brand & Focus Accent */
-  --color-accent-hover: #C6F684;       /* Brightened Hover State */
-  --color-accent-dim: rgba(182, 243, 107, 0.12); /* Subtle pill / badge background */
-  --color-accent-glow: rgba(182, 243, 107, 0.28); /* Neon Ambient Glow */
-  --color-accent-glow-subtle: rgba(182, 243, 107, 0.10);
+  /* American Express Blue Palette */
+  --color-accent: #006FCF;             /* Primary Blue: #006FCF */
+  --color-accent-dark: #004B87;        /* Dark Blue: #004B87 */
+  --color-accent-hover: #0055A5;       /* Hover Blue: #0055A5 */
+  --color-accent-dim: rgba(0, 111, 207, 0.08); /* Light Blue Tint for Badges/Pills */
+  --color-accent-glow: rgba(0, 111, 207, 0.22); /* Clean Blue Accent Glow */
+  --color-accent-glow-subtle: rgba(0, 111, 207, 0.08);
 
   /* Status Colors */
-  --color-status-live: #B6F36B;
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-danger: #EF4444;
+  --color-status-live: #006FCF;
+  --color-success: #008544;
+  --color-warning: #D97706;
+  --color-danger: #D9381E;
 
-  /* -------------------------------------------------------------------------
-     Typography Tokens
-     ------------------------------------------------------------------------- */
+  /* Typography Tokens */
   --font-heading: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
@@ -61,9 +63,7 @@
   --leading-normal: 1.6;
   --leading-relaxed: 1.75;
 
-  /* -------------------------------------------------------------------------
-     Spacing System (8pt Base Grid)
-     ------------------------------------------------------------------------- */
+  /* Spacing System (8pt Base Grid) */
   --space-1: 0.25rem;   /* 4px */
   --space-2: 0.5rem;    /* 8px */
   --space-3: 0.75rem;   /* 12px */
@@ -78,47 +78,69 @@
   --space-24: 6rem;     /* 96px */
   --space-32: 8rem;     /* 128px */
 
-  /* -------------------------------------------------------------------------
-     Layout & Sizing
-     ------------------------------------------------------------------------- */
+  /* Layout & Sizing */
   --container-max-width: 1240px;
   --container-narrow-width: 860px;
   --nav-height: 4.75rem;
 
-  /* -------------------------------------------------------------------------
-     Border Radii (Clean, Rounded Modern Aesthetic)
-     ------------------------------------------------------------------------- */
+  /* Border Radii */
   --radius-xs: 0.25rem;    /* 4px */
   --radius-sm: 0.375rem;   /* 6px */
   --radius-md: 0.625rem;   /* 10px */
   --radius-lg: 0.875rem;   /* 14px */
-  --radius-xl: 1.25rem;    /* 20px - Premium Project Cards */
+  --radius-xl: 1.25rem;    /* 20px */
   --radius-2xl: 1.75rem;   /* 28px */
   --radius-full: 9999px;   /* Pills & Avatars */
 
-  /* -------------------------------------------------------------------------
-     Shadows & Elevation
-     ------------------------------------------------------------------------- */
-  --shadow-subtle: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
-  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.4);
-  --shadow-card-hover: 0 12px 30px -4px rgba(0, 0, 0, 0.6), 0 0 20px -2px var(--color-accent-glow);
-  --shadow-btn: 0 0 18px -2px var(--color-accent-glow);
-  --shadow-btn-hover: 0 0 28px 0 rgba(182, 243, 107, 0.45);
+  /* Shadows (Clean, Soft Enterprise Elevation) */
+  --shadow-subtle: 0 1px 3px 0 rgba(37, 43, 51, 0.05);
+  --shadow-card: 0 2px 8px -1px rgba(37, 43, 51, 0.06), 0 1px 3px 0 rgba(37, 43, 51, 0.04);
+  --shadow-card-hover: 0 12px 28px -4px rgba(0, 75, 135, 0.12), 0 0 1px 1px rgba(0, 111, 207, 0.25);
+  --shadow-btn: 0 2px 8px rgba(0, 111, 207, 0.22);
+  --shadow-btn-hover: 0 4px 14px rgba(0, 85, 165, 0.35);
 
-  /* -------------------------------------------------------------------------
-     Transitions & Motion
-     ------------------------------------------------------------------------- */
+  /* Transitions & Motion */
   --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* -------------------------------------------------------------------------
-     Layering / z-index
-     ------------------------------------------------------------------------- */
+  /* Layering / z-index */
   --z-negative: -1;
   --z-base: 1;
   --z-elevated: 10;
   --z-header: 100;
   --z-drawer: 200;
   --z-modal: 300;
+}
+
+/* Optional Dark/Night Variant: American Express Centurion / Midnight Palette */
+[data-theme="dark"] {
+  --color-bg: #0B131E;                 /* Midnight Deep Blue Background */
+  --color-bg-secondary: #111B29;       /* Dark Blue Secondary Background */
+  --color-surface: #152234;            /* Dark Card Surface */
+  --color-surface-elevated: #1B2B42;   /* Elevated Card Surface */
+  --color-surface-hover: #223552;      /* Interactive Hover State */
+  --color-light-grey: #1E2E44;
+  
+  --color-border: #223552;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-hover: #006FCF;
+
+  --color-text-primary: #F5F7FA;
+  --color-text-secondary: #CBD2DE;
+  --color-text-muted: #7A8490;
+  --color-text-inverse: #FFFFFF;
+
+  --color-accent: #006FCF;
+  --color-accent-dark: #004B87;
+  --color-accent-hover: #38BDF8;
+  --color-accent-dim: rgba(0, 111, 207, 0.15);
+  --color-accent-glow: rgba(0, 111, 207, 0.30);
+  --color-accent-glow-subtle: rgba(0, 111, 207, 0.12);
+
+  --shadow-subtle: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 12px 30px -4px rgba(0, 0, 0, 0.5), 0 0 20px -2px var(--color-accent-glow);
+  --shadow-btn: 0 0 18px -2px var(--color-accent-glow);
+  --shadow-btn-hover: 0 0 28px 0 rgba(0, 111, 207, 0.45);
 }
